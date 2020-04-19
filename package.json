@@ -1,0 +1,70 @@
+{
+  "name": "export-svg-loader",
+  "version": "0.0.0",
+  "private": true,
+  "description": "A webpack loader which exports SVG files to image files.",
+  "main": "dist/loader.js",
+  "scripts": {
+    "build": "NODE_ENV=production babel src -d dist",
+    "test": "jest --coverage --forceExit",
+    "prebuild": "rm -rf dist/",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gersanco/export-svg-loader.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gersanco/export-svg-loader/issues"
+  },
+  "homepage": "https://github.com/gersanco/export-svg-loader",
+  "keywords": [
+    "webpack",
+    "loader",
+    "svg",
+    "images",
+    "png",
+    "jpg",
+    "jpeg",
+    "webp",
+    "ico",
+    "export"
+  ],
+  "engines": {
+    "node": ">= 7.6.0"
+  },
+  "author": "German San Emeterio <gersanco92@gmail,com>",
+  "license": "ISC",
+  "files": [
+    "dist"
+  ],
+  "jest": {
+    "verbose": true,
+    "coveragePathIgnorePatterns": [
+      "node_modules",
+      "test",
+      "schema.js"
+    ]
+  },
+  "peerDependencies": {
+    "webpack": "^4.42.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.0",
+    "@babel/core": "^7.5.4",
+    "@babel/polyfill": "^7.4.4",
+    "@babel/preset-env": "^7.5.4",
+    "babel-jest": "^25.3.0",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^25.3.0",
+    "memfs": "^3.1.2",
+    "prettier": "^2.0.4",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "@nodepit/svg-to-img": "^2.1.1",
+    "loader-utils": "^2.0.0",
+    "schema-utils": "^2.6.5"
+  }
+}
