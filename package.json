@@ -1,7 +1,7 @@
 {
   "name": "export-svg-loader",
-  "version": "0.0.0",
-  "private": true,
+  "version": "0.1.0",
+  "private": false,
   "description": "A webpack loader which exports SVG files to image files.",
   "main": "dist/loader.js",
   "scripts": {
