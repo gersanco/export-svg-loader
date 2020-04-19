@@ -1,0 +1,6 @@
+src/
+.vscode
+.prettierrc
+.nvmrc
+babel.config.js
+coverage
